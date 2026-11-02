@@ -1783,3 +1783,25 @@ figcaption {
   transform: translateY(-4px);
   box-shadow: 0 16px 36px rgba(18, 50, 36, 0.12) !important;
 }
+
+/* --------------------------------------------------------------------------
+   23. Awards Section (Gallery Page)
+   -------------------------------------------------------------------------- */
+.award-poster-card {
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.award-poster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(18, 50, 36, 0.12) !important;
+  border-color: var(--color-champagne-gold) !important;
+}
+
+.award-detail-item {
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.award-detail-item:hover {
+  transform: translateX(4px);
+  background-color: var(--color-cream) !important;
+}
