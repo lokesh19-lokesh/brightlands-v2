@@ -1,0 +1,348 @@
+/* ==========================================================================
+   BRIGHTLANDS DERMA – RESPONSIVE STYLESHEET
+   Mobile-First & Breakpoint Refinements
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Mobile Navigation Drawer (Offcanvas Menu)
+   -------------------------------------------------------------------------- */
+.mobile-nav-toggle {
+  background: transparent;
+  border: 1px solid var(--color-gold-border);
+  color: var(--color-forest-green);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-toggle:hover {
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--color-warm-ivory);
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.15);
+  z-index: 1100;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.mobile-drawer.is-open {
+  right: 0;
+}
+
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(6, 63, 50, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1090;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-drawer-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-gold-border);
+  margin-bottom: 1.25rem;
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--color-forest-green);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.mobile-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav-links a {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-forest-green);
+  border-bottom: 1px solid rgba(181, 138, 67, 0.15);
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a.active {
+  color: var(--color-burgundy);
+  padding-left: 0.8rem;
+}
+
+.mobile-nav-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-submenu {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  display: none;
+}
+
+.mobile-submenu.show {
+  display: block;
+}
+
+.mobile-submenu a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border-bottom: none;
+  padding: 0.45rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoints
+   -------------------------------------------------------------------------- */
+
+/* Large Desktop (1200px and above) */
+@media (min-width: 1200px) {
+  .hero-image-card img {
+    height: 420px;
+  }
+}
+
+/* Desktop (992px to 1199px) */
+@media (max-width: 1199px) {
+  .hero-editorial .hero-heading {
+    font-size: 3.4rem;
+  }
+  
+  .about-preview-grid {
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .about-thumb-card img {
+    height: 220px;
+  }
+  
+  .treatments-grid-mockup {
+    gap: 1.1rem;
+  }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) {
+  .top-bar-divider {
+    display: none;
+  }
+  
+  .top-bar .container {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+  
+  .nav-desktop-menu,
+  .nav-phone-link,
+  .nav-cta-btn {
+    display: none !important;
+  }
+  
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  
+  .hero-editorial {
+    padding: 2.5rem 0 3.5rem;
+  }
+  
+  .hero-editorial .hero-heading {
+    font-size: 2.8rem;
+  }
+  
+  .hero-image-card img {
+    height: 320px;
+  }
+  
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-thumb-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .about-thumb-card img {
+    height: 240px;
+  }
+  
+  .treatments-grid-mockup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .doctors-layout-mockup {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.8rem;
+  }
+  
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .about-reception-arched {
+    border-radius: 60px 20px 20px 20px;
+  }
+  
+  .about-reception-arched img {
+    height: 300px;
+  }
+  
+  .value-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .appointment-card-container {
+    padding: 2.2rem 1.8rem;
+  }
+}
+
+/* Large Mobile & Smartphones (320px to 767px) */
+@media (max-width: 767px) {
+  .top-bar {
+    font-size: 0.74rem;
+    padding: 0.4rem 0;
+  }
+  
+  .navbar-brand-custom img {
+    height: 38px;
+  }
+  
+  .hero-editorial {
+    padding: 1.8rem 0 2.8rem;
+  }
+  
+  .hero-editorial .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+  }
+  
+  .hero-editorial .hero-heading {
+    font-size: 2.15rem;
+  }
+  
+  .hero-editorial .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image-card {
+    border-radius: var(--radius-lg);
+  }
+  
+  .hero-image-card img {
+    height: 240px;
+  }
+  
+  .hero-cta-pill {
+    font-size: 0.82rem;
+    padding: 0.65rem 1.4rem;
+    bottom: 14px;
+    width: auto;
+    white-space: nowrap;
+  }
+  
+  .about-center-content h2 {
+    font-size: 1.65rem;
+  }
+  
+  .rating-badge-pill {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.85rem 1.4rem;
+    border-radius: var(--radius-md);
+  }
+  
+  .divider-vertical {
+    width: 60px;
+    height: 1px;
+  }
+  
+  .treatments-grid-mockup {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+  
+  .treatment-card-mockup {
+    padding: 0.75rem;
+  }
+  
+  .treatment-card-mockup .thumb-wrap {
+    width: 80px;
+    height: 60px;
+  }
+  
+  .treatment-card-mockup h3 {
+    font-size: 0.96rem;
+  }
+  
+  .doctors-group-image-card img {
+    height: 190px;
+  }
+  
+  .doctors-content-mockup h2 {
+    font-size: 1.65rem;
+  }
+  
+  .site-footer {
+    padding: 3.5rem 0 1.5rem;
+  }
+  
+  .floating-whatsapp {
+    width: 48px;
+    height: 48px;
+    font-size: 1.45rem;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .appointment-card-container {
+    padding: 1.6rem 1.2rem;
+    border-radius: var(--radius-lg);
+  }
+}

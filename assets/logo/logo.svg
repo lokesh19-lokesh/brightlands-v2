@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%" fill="none" aria-label="Brightlands Derma Logo">
+  <!-- Brand Emblem / Stylized Medical Cross with Luxury Floral Clover Aesthetic -->
+  <g transform="translate(10, 8)">
+    <!-- Central Cross Petals in Forest Green (#063F32) -->
+    <path d="M 32 4 C 32 18 20 28 8 28 C 20 28 32 38 32 52 C 32 38 44 28 56 28 C 44 28 32 18 32 4 Z" fill="#063F32"/>
+    <!-- Outer Clover Leaf Corners in Deep Green -->
+    <rect x="22" y="6" width="20" height="52" rx="10" fill="#064B32" fill-opacity="0.85"/>
+    <rect x="6" y="22" width="52" height="20" rx="10" fill="#064B32" fill-opacity="0.85"/>
+    <!-- Overlaid Central Cutout -->
+    <circle cx="32" cy="32" r="7" fill="#FFFDF7"/>
+    <!-- Champagne Gold Star/Diamond Centerpiece -->
+    <path d="M 32 27 L 34.2 30.8 L 38 32 L 34.2 33.2 L 32 37 L 29.8 33.2 L 26 32 L 29.8 30.8 Z" fill="#B58A43"/>
+    <!-- Four subtle gold accent dots -->
+    <circle cx="21" cy="21" r="1.5" fill="#B58A43"/>
+    <circle cx="43" cy="21" r="1.5" fill="#B58A43"/>
+    <circle cx="21" cy="43" r="1.5" fill="#B58A43"/>
+    <circle cx="43" cy="43" r="1.5" fill="#B58A43"/>
+  </g>
+
+  <!-- Typography: BRIGHTLANDS DERMA -->
+  <g transform="translate(78, 12)">
+    <text x="0" y="26" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#063F32" letter-spacing="1.2">BRIGHTLANDS</text>
+    <text x="0" y="46" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="600" fill="#063F32" letter-spacing="2.8">DERMA</text>
+    <!-- Subtitle: SKIN, HAIR & LASER -->
+    <text x="2" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#B58A43" letter-spacing="2.4">SKIN, HAIR &amp; LASER</text>
+  </g>
+</svg>
