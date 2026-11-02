@@ -495,12 +495,19 @@ figcaption {
 }
 
 .nav-phone-link {
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--color-forest-green);
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.5rem;
+  letter-spacing: 0.01em;
+  transition: color var(--transition-fast);
+}
+
+.nav-phone-link i {
+  font-size: 1.05rem;
+  color: var(--color-champagne-gold);
 }
 
 .nav-phone-link:hover {
