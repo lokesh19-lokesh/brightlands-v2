@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initMobileNavigation();
+  initDesktopDropdown();
   initFaqAccordion();
   initActiveNavLink();
   initGalleryFilter();
@@ -186,5 +187,26 @@ function initBackToTop() {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/**
+ * Desktop Dropdown Navigation Support
+ * Allows clicking on 'Treatments' to navigate to treatments.html on desktop,
+ * while maintaining smooth hover menu opening
+ */
+function initDesktopDropdown() {
+  const dropdownToggles = document.querySelectorAll('.site-header .nav-link-custom.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      // On desktop screens, clicking the link navigates to its href
+      if (window.innerWidth >= 992) {
+        const targetHref = toggle.getAttribute('href');
+        if (targetHref && targetHref !== '#' && !targetHref.startsWith('javascript:')) {
+          window.location.href = targetHref;
+        }
+      }
+    });
   });
 }

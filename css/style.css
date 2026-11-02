@@ -454,16 +454,84 @@ figcaption {
   border-radius: var(--radius-pill);
 }
 
-/* Dropdown Menu */
+/* Remove Bootstrap default solid triangle caret (fixes double-arrow issue) */
+.nav-link-custom.dropdown-toggle::after,
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Dropdown toggle link alignment */
+.nav-link-custom.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+/* Refined dropdown chevron icon */
+.nav-link-custom .bi-chevron-down {
+  font-size: 0.72rem;
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+/* Rotate chevron when open or hovered */
+.dropdown:hover .nav-link-custom .bi-chevron-down,
+.dropdown.show .nav-link-custom .bi-chevron-down,
+.nav-link-custom.show .bi-chevron-down,
+.nav-link-custom[aria-expanded="true"] .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu - Luxury & Flawless UX */
 .dropdown-menu-custom {
   background-color: var(--color-warm-ivory);
   border: 1px solid var(--color-gold-border);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-dropdown);
-  padding: 0.8rem 0;
-  margin-top: 0.5rem;
+  box-shadow: 0 16px 36px rgba(18, 50, 36, 0.12), 0 4px 12px rgba(18, 50, 36, 0.06);
+  padding: 0.6rem 0;
+  margin-top: 0.35rem;
   min-width: 260px;
-  animation: fadeInDown 0.25s ease-out;
+  z-index: 1050;
+}
+
+/* Invisible bridge so moving cursor down never drops the menu */
+.dropdown-menu-custom::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
+/* Desktop smooth hover support */
+@media (min-width: 992px) {
+  .nav-desktop .dropdown:hover > .dropdown-menu-custom,
+  nav.d-none.d-lg-flex .dropdown:hover > .dropdown-menu-custom,
+  .dropdown:hover > .dropdown-menu-custom {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
+
+  .dropdown-menu-custom {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  }
+
+  .dropdown-menu-custom.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
 }
 
 .dropdown-item-custom {
@@ -473,7 +541,7 @@ figcaption {
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--color-text-main);
-  padding: 0.65rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   transition: all var(--transition-fast);
 }
 
