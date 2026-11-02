@@ -1742,3 +1742,44 @@ figcaption {
   color: var(--color-champagne-gold);
   font-weight: 600;
 }
+
+/* --------------------------------------------------------------------------
+   22. Featured Nutritionist Section (Mayuri Aavula)
+   -------------------------------------------------------------------------- */
+.nutritionist-feature-section {
+  position: relative;
+}
+
+.nutritionist-card {
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.nutritionist-card:hover {
+  box-shadow: var(--shadow-card-hover) !important;
+}
+
+.credential-item {
+  transition: all var(--transition-fast);
+}
+
+.credential-item:hover {
+  transform: translateX(4px);
+}
+
+.achievement-item {
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.achievement-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-champagne-gold) !important;
+}
+
+.nutritionist-img-frame {
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.nutritionist-img-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(18, 50, 36, 0.12) !important;
+}
