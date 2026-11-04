@@ -1,5 +1,5 @@
 /**
- * Bright Lands Skin, Hair & Laser Clinic – Main Application JavaScript
+ * Brightlands Skin, Hair & Laser Clinic – Main Application JavaScript
  * Handles navigation, sticky header, mobile drawer, accordions, and interactions
  */
 
