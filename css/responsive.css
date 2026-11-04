@@ -377,7 +377,32 @@
   }
 
   .site-footer {
-    padding: 3.5rem 0 1.5rem;
+    padding: 3rem 0 1.5rem;
+  }
+
+  /* Footer: Side by side Treatments and Quick Links */
+  .footer-col-treatments,
+  .footer-col-quicklinks {
+    margin-bottom: 0.5rem;
+  }
+
+  .site-footer .footer-heading {
+    font-size: 1.02rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .site-footer .footer-heading::after {
+    width: 22px;
+  }
+
+  .site-footer .footer-links-list li {
+    margin-bottom: 0.42rem;
+  }
+
+  .site-footer .footer-links-list a {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    white-space: normal;
   }
 
   .floating-whatsapp {
