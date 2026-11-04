@@ -1811,6 +1811,21 @@ figcaption {
   color: var(--color-champagne-gold);
 }
 
+.footer-legal-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-link:hover {
+  color: var(--color-champagne-gold) !important;
+  text-decoration: underline;
+}
+
+.footer-bottom-divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* --------------------------------------------------------------------------
    20. Floating WhatsApp CTA
    -------------------------------------------------------------------------- */
