@@ -240,6 +240,47 @@
   .appointment-card-container {
     padding: 2.2rem 1.8rem;
   }
+
+  /* Patient Experiences Horizontal Slider for Mobile & Tablet */
+  .testimonials-slider-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 1.15rem !important;
+    padding: 0.5rem 0.25rem 1.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    cursor: grab;
+  }
+
+  .testimonials-slider-track:active,
+  .testimonials-slider-track.active-dragging {
+    cursor: grabbing;
+  }
+
+  .testimonials-slider-track::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .testimonials-slider-track > .testimonial-slide-item {
+    flex: 0 0 65% !important;
+    max-width: 65% !important;
+    width: 65% !important;
+    scroll-snap-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .testimonials-slider-track .testimonial-card-editorial {
+    height: 100% !important;
+    min-height: 280px;
+  }
 }
 
 /* Large Mobile & Smartphones (320px to 767px) */
@@ -306,6 +347,12 @@
   .treatments-grid-mockup {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+  }
+
+  .testimonials-slider-track > .testimonial-slide-item {
+    flex: 0 0 86% !important;
+    max-width: 86% !important;
+    width: 86% !important;
   }
 
   .treatment-card-mockup {

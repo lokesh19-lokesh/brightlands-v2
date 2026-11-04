@@ -1443,6 +1443,67 @@ figcaption {
   color: var(--color-text-muted);
 }
 
+/* Testimonials Slider Container & Controls */
+.testimonials-slider-container {
+  position: relative;
+  width: 100%;
+}
+
+.testimonials-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.slider-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gold-border);
+  color: var(--color-forest-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(6, 63, 50, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.slider-nav-btn:hover,
+.slider-nav-btn:active {
+  background-color: var(--color-forest-green);
+  color: var(--color-white);
+  border-color: var(--color-forest-green);
+  transform: scale(1.05);
+}
+
+.slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(181, 138, 67, 0.35);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slider-dot.active {
+  width: 28px;
+  border-radius: 14px;
+  background-color: var(--color-forest-green);
+}
+
 /* --------------------------------------------------------------------------
    17. Gallery Grid
    -------------------------------------------------------------------------- */

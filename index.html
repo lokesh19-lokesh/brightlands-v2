@@ -618,70 +618,87 @@
             confidence.</p>
         </div>
 
-        <div class="row g-4">
-          <!-- Testimonial 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial-card-editorial">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+        <div class="testimonials-slider-container">
+          <div class="row g-4 testimonials-slider-track" id="testimonialsTrack">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-4 testimonial-slide-item">
+              <div class="testimonial-card-editorial">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  “I underwent chemical peeling, laser toning and pigmentation treatment for my acne-prone skin. Dr. Sania
+                  was very patient to hear out my concerns and provide the right evidence-based treatment. Within a month,
+                  my skin cleared up visibly.”
+                </p>
+                <div class="testimonial-author-meta">
+                  <div class="testimonial-avatar">SF</div>
+                  <div class="testimonial-author-info">
+                    <h4>Shaheen Farheen</h4>
+                    <span>Acne &amp; Pigmentation Treatment</span>
+                  </div>
+                </div>
               </div>
-              <p class="testimonial-quote">
-                “I underwent chemical peeling, laser toning and pigmentation treatment for my acne-prone skin. Dr. Sania
-                was very patient to hear out my concerns and provide the right evidence-based treatment. Within a month,
-                my skin cleared up visibly.”
-              </p>
-              <div class="testimonial-author-meta">
-                <div class="testimonial-avatar">SF</div>
-                <div class="testimonial-author-info">
-                  <h4>Shaheen Farheen</h4>
-                  <span>Acne &amp; Pigmentation Treatment</span>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-4 testimonial-slide-item">
+              <div class="testimonial-card-editorial">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  “I had been struggling with severe hair fall for over six months. Thanks to Dr. Sania’s trichology
+                  regimen and PRP treatment at the Gachibowli clinic, my hair fall reduced significantly and new growth is
+                  visible. Highly recommended!”
+                </p>
+                <div class="testimonial-author-meta">
+                  <div class="testimonial-avatar">IH</div>
+                  <div class="testimonial-author-info">
+                    <h4>Imran Hussain</h4>
+                    <span>Hair Restoration &amp; PRP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 col-lg-4 testimonial-slide-item">
+              <div class="testimonial-card-editorial">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  “Visited for mole and wart removal. The clinic is spotlessly clean, sterile, and the team made me feel
+                  completely comfortable throughout the minor dermatosurgery procedure. Exceptional care!”
+                </p>
+                <div class="testimonial-author-meta">
+                  <div class="testimonial-avatar">SK</div>
+                  <div class="testimonial-author-info">
+                    <h4>Swathi Kunasani</h4>
+                    <span>Dermato Surgery</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Testimonial 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial-card-editorial">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-quote">
-                “I had been struggling with severe hair fall for over six months. Thanks to Dr. Sania’s trichology
-                regimen and PRP treatment at the Gachibowli clinic, my hair fall reduced significantly and new growth is
-                visible. Highly recommended!”
-              </p>
-              <div class="testimonial-author-meta">
-                <div class="testimonial-avatar">IH</div>
-                <div class="testimonial-author-info">
-                  <h4>Imran Hussain</h4>
-                  <span>Hair Restoration &amp; PRP</span>
-                </div>
-              </div>
+          <!-- Mobile Slider Controls (Navigation Arrows & Dots) -->
+          <div class="testimonials-slider-controls d-lg-none">
+            <button type="button" class="slider-nav-btn prev-btn" id="testimonialsPrevBtn" aria-label="Previous testimonial">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <div class="slider-dots" id="testimonialsDots">
+              <button type="button" class="slider-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
+              <button type="button" class="slider-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
+              <button type="button" class="slider-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
             </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial-card-editorial">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-quote">
-                “Visited for mole and wart removal. The clinic is spotlessly clean, sterile, and the team made me feel
-                completely comfortable throughout the minor dermatosurgery procedure. Exceptional care!”
-              </p>
-              <div class="testimonial-author-meta">
-                <div class="testimonial-avatar">SK</div>
-                <div class="testimonial-author-info">
-                  <h4>Swathi Kunasani</h4>
-                  <span>Dermato Surgery</span>
-                </div>
-              </div>
-            </div>
+            <button type="button" class="slider-nav-btn next-btn" id="testimonialsNextBtn" aria-label="Next testimonial">
+              <i class="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>

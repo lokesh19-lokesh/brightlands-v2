@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initGalleryFilter();
   initBackToTop();
+  initTestimonialsSlider();
 });
 
 /**
@@ -231,5 +232,110 @@ function initDesktopDropdown() {
         }
       }
     });
+  });
+}
+
+/**
+ * Patient Experiences Slider for Mobile and Tablet
+ */
+function initTestimonialsSlider() {
+  const track = document.getElementById('testimonialsTrack');
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.testimonial-slide-item');
+  const dots = document.querySelectorAll('.testimonials-slider-controls .slider-dot');
+  const prevBtn = document.getElementById('testimonialsPrevBtn');
+  const nextBtn = document.getElementById('testimonialsNextBtn');
+
+  if (!slides.length) return;
+
+  // Active dot sync on scroll
+  const updateActiveDot = () => {
+    const scrollLeft = track.scrollLeft;
+    const trackWidth = track.clientWidth;
+    let activeIndex = 0;
+    let minDistance = Infinity;
+
+    slides.forEach((slide, idx) => {
+      const slideCenter = slide.offsetLeft - track.offsetLeft + slide.offsetWidth / 2;
+      const viewCenter = scrollLeft + trackWidth / 2;
+      const distance = Math.abs(slideCenter - viewCenter);
+      if (distance < minDistance) {
+        minDistance = distance;
+        activeIndex = idx;
+      }
+    });
+
+    dots.forEach((dot, idx) => {
+      if (idx === activeIndex) {
+        dot.classList.add('active');
+        dot.setAttribute('aria-current', 'true');
+      } else {
+        dot.classList.remove('active');
+        dot.removeAttribute('aria-current');
+      }
+    });
+  };
+
+  track.addEventListener('scroll', () => {
+    window.requestAnimationFrame(updateActiveDot);
+  }, { passive: true });
+
+  // Click dot to navigate to slide
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      if (slides[idx]) {
+        slides[idx].scrollIntoView({
+          behavior: 'smooth',
+          inline: 'center',
+          block: 'nearest'
+        });
+      }
+    });
+  });
+
+  // Next / Prev button navigation
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const cardWidth = slides[0].offsetWidth + 18;
+      track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const cardWidth = slides[0].offsetWidth + 18;
+      track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    });
+  }
+
+  // Mouse drag support for smooth swiping on desktop & DevTools emulation
+  let isDown = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  track.addEventListener('mousedown', (e) => {
+    isDown = true;
+    track.classList.add('active-dragging');
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  });
+
+  track.addEventListener('mouseleave', () => {
+    isDown = false;
+    track.classList.remove('active-dragging');
+  });
+
+  track.addEventListener('mouseup', () => {
+    isDown = false;
+    track.classList.remove('active-dragging');
+  });
+
+  track.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    track.scrollLeft = scrollLeft - walk;
   });
 }
