@@ -532,17 +532,60 @@ figcaption {
     visibility: visible !important;
     transform: translateY(0) !important;
   }
+
+  /* Mega Menu (2-Column Layout matching approved treatments catalog) */
+  .dropdown-menu-custom.dropdown-menu-mega {
+    min-width: 600px;
+    max-width: 640px;
+    padding: 0.85rem 1rem 0.6rem;
+  }
+
+  .dropdown-mega-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2rem 0.75rem;
+  }
+
+  .dropdown-mega-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .dropdown-mega-footer {
+    border-top: 1px solid var(--color-gold-border);
+    margin-top: 0.6rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-menu-custom.dropdown-menu-mega {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+  .dropdown-mega-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .dropdown-mega-col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .dropdown-item-custom {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-text-main);
-  padding: 0.6rem 1.25rem;
+  padding: 0.48rem 0.85rem;
+  border-radius: var(--radius-xs);
   transition: all var(--transition-fast);
+  white-space: normal;
 }
 
 .dropdown-item-custom i {

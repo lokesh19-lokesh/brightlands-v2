@@ -63,13 +63,30 @@
           <a href="treatments.html" class="nav-link-custom dropdown-toggle active" id="treatDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             Treatments <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
           </a>
-          <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="treatDropdown">
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/clinical-dermatology.html"><i class="bi bi-arrow-right-short"></i> Clinical Dermatology</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/cosmetic-dermatology.html"><i class="bi bi-arrow-right-short"></i> Cosmetic Dermatology</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/hair-restoration.html"><i class="bi bi-arrow-right-short"></i> Trichology &amp; Hair Care</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/laser-hair-removal.html"><i class="bi bi-arrow-right-short"></i> Laser Hair Removal</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/hydrafacials.html"><i class="bi bi-arrow-right-short"></i> Hydrafacials &amp; Medi Facials</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/anti-ageing.html"><i class="bi bi-arrow-right-short"></i> Anti-Ageing Treatments</a></li>
+          <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-mega" aria-labelledby="treatDropdown">
+            <div class="dropdown-mega-grid">
+              <div class="dropdown-mega-col">
+                <a class="dropdown-item dropdown-item-custom" href="treatments/clinical-dermatology.html"><i class="bi bi-chevron-right"></i> Clinical Dermatology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/trichology.html"><i class="bi bi-chevron-right"></i> Trichology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/cosmetic-gynecology.html"><i class="bi bi-chevron-right"></i> Cosmetic Gynecology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/aesthetic-services.html"><i class="bi bi-chevron-right"></i> Aesthetic Services</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/dermato-surgery.html"><i class="bi bi-chevron-right"></i> Dermato Surgery</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/hair-transplant-surgery.html"><i class="bi bi-chevron-right"></i> Hair Transplant Surgery</a>
+              </div>
+              <div class="dropdown-mega-col">
+                <a class="dropdown-item dropdown-item-custom" href="treatments/hydrafacials.html"><i class="bi bi-chevron-right"></i> Hydrafacials &amp; Medi Facials</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/laser-hair-removal.html"><i class="bi bi-chevron-right"></i> Laser Hair Removal</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/laser-toning.html"><i class="bi bi-chevron-right"></i> Laser Toning &amp; Advanced Solutions</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/anti-ageing.html"><i class="bi bi-chevron-right"></i> AntiAging Treatments &amp; Solutions</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/glow-and-skin-lightening.html"><i class="bi bi-chevron-right"></i> Glow &amp; Skin Lightening</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/non-surgical-hair-regrowth.html"><i class="bi bi-chevron-right"></i> Non-Surgical Hair Re-growth</a>
+              </div>
+            </div>
+            <div class="dropdown-mega-footer">
+              <a class="dropdown-item-custom fw-bold justify-content-center active" href="treatments.html" style="color: var(--color-burgundy);">
+                <i class="bi bi-grid-fill me-1"></i> View All 12 Treatments &amp; Procedures <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
           </ul>
         </div>
         <a href="doctors.html" class="nav-link-custom">Doctors</a>
@@ -100,7 +117,26 @@
     <ul class="mobile-nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="treatments.html" class="active">Treatments</a></li>
+      <li>
+        <a href="treatments.html" class="mobile-nav-dropdown-toggle active" data-target="mobileTreatmentsMenu">
+          <span>Treatments</span>
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <ul class="mobile-submenu" id="mobileTreatmentsMenu">
+          <li><a href="treatments/clinical-dermatology.html">Clinical Dermatology</a></li>
+          <li><a href="treatments/trichology.html">Trichology</a></li>
+          <li><a href="treatments/cosmetic-gynecology.html">Cosmetic Gynecology</a></li>
+          <li><a href="treatments/aesthetic-services.html">Aesthetic Services</a></li>
+          <li><a href="treatments/dermato-surgery.html">Dermato Surgery</a></li>
+          <li><a href="treatments/hair-transplant-surgery.html">Hair Transplant Surgery</a></li>
+          <li><a href="treatments/hydrafacials.html">Hydrafacials &amp; Medi Facials</a></li>
+          <li><a href="treatments/laser-hair-removal.html">Laser Hair Removal</a></li>
+          <li><a href="treatments/laser-toning.html">Laser Toning &amp; Advanced Solutions</a></li>
+          <li><a href="treatments/anti-ageing.html">AntiAging Treatments &amp; Solutions</a></li>
+          <li><a href="treatments/glow-and-skin-lightening.html">Glow &amp; Skin Lightening</a></li>
+          <li><a href="treatments/non-surgical-hair-regrowth.html">Non-Surgical Hair Re-growth</a></li>
+        </ul>
+      </li>
       <li><a href="doctors.html">Doctors</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -134,7 +170,7 @@
           </p>
         </div>
 
-        <!-- Treatments Grid (Matching Mockup with extended detail cards) -->
+        <!-- Treatments Grid (All 12 Treatments & Procedures) -->
         <div class="row g-4">
           <!-- Treatment 1: Clinical Dermatology -->
           <div class="col-lg-4 col-md-6">
@@ -156,117 +192,155 @@
                   <li><i class="bi bi-check2 text-success me-2"></i> Skin allergy diagnostics</li>
                 </ul>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/clinical-dermatology.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=ClinicalDermatology" class="btn-forest btn-sm">
-                    Book
-                  </a>
+                  <a href="treatments/clinical-dermatology.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=ClinicalDermatology" class="btn-forest btn-sm">Book</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Treatment 2: Cosmetic Dermatology -->
+          <!-- Treatment 2: Trichology -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
               <div class="p-3">
                 <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
-                  <img src="assets/images/treatments/card-cosmetic-2x.webp" alt="Cosmetic Dermatology" class="w-100 h-100 object-fit-cover">
-                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Rejuvenation</span>
-                </div>
-              </div>
-              <div class="card-body p-4 pt-1 d-flex flex-column">
-                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Cosmetic Dermatology</h3>
-                <p class="small text-muted mb-3">
-                  Tailored skin rejuvenation solutions including advanced chemical peels, laser toning, hyperpigmentation control, and radiant skin brightening.
-                </p>
-                <ul class="list-unstyled small mb-4 text-muted">
-                  <li><i class="bi bi-check2 text-success me-2"></i> Chemical peels &amp; gentle exfoliation</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Laser toning for melasma &amp; dark spots</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Dull complexion restoration</li>
-                </ul>
-                <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/cosmetic-dermatology.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=CosmeticDermatology" class="btn-forest btn-sm">
-                    Book
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Treatment 3: Trichology & Hair Restoration -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
-              <div class="p-3">
-                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
-                  <img src="assets/images/treatments/card-trichology-2x.webp" alt="Trichology &amp; Hair Restoration" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/images/treatments/card-trichology.webp" alt="Trichology &amp; Scalp Health" class="w-100 h-100 object-fit-cover">
                   <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-champagne-gold);">Hair &amp; Scalp</span>
                 </div>
               </div>
               <div class="card-body p-4 pt-1 d-flex flex-column">
-                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Trichology &amp; Hair Restoration</h3>
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Trichology</h3>
                 <p class="small text-muted mb-3">
-                  Scientific hair loss diagnosis, PRP therapy, GFC (Growth Factor Concentrate), scalp therapy, and surgical/non-surgical restoration solutions.
+                  Scientific hair loss diagnosis, digital trichoscopy scans, root-cause biomarker assessment, and targeted therapies for telogen effluvium and alopecia.
                 </p>
                 <ul class="list-unstyled small mb-4 text-muted">
-                  <li><i class="bi bi-check2 text-success me-2"></i> Autologous PRP &amp; GFC hair therapy</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Dandruff &amp; alopecia treatment</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Follicular assessment and density care</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> 200x digital trichoscopy mapping</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Alopecia areata &amp; shedding care</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Scalp psoriasis &amp; dandruff detox</li>
                 </ul>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/hair-restoration.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=Trichology" class="btn-forest btn-sm">
-                    Book
-                  </a>
+                  <a href="treatments/trichology.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=Trichology" class="btn-forest btn-sm">Book</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Treatment 4: Laser Hair Removal -->
+          <!-- Treatment 3: Cosmetic Gynecology -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
               <div class="p-3">
                 <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
-                  <img src="assets/images/treatments/card-laser-2x.webp" alt="Laser Hair Removal" class="w-100 h-100 object-fit-cover">
-                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-forest-green);">Painless Laser</span>
+                  <img src="assets/images/treatments/card-cosmetic-gynecology.jpg" alt="Cosmetic Gynecology" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Intimate Aesthetics</span>
                 </div>
               </div>
               <div class="card-body p-4 pt-1 d-flex flex-column">
-                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Laser Hair Removal</h3>
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Cosmetic Gynecology</h3>
                 <p class="small text-muted mb-3">
-                  USFDA-approved triple wavelength painless laser technology for permanent hair reduction across face, underarms, arms, legs, and full body.
+                  Confidential aesthetic and functional intimate wellness therapies by female plastic surgeon Dr. Surya Keerthana. Non-surgical laser tightening &amp; labiaplasty.
                 </p>
                 <ul class="list-unstyled small mb-4 text-muted">
-                  <li><i class="bi bi-check2 text-success me-2"></i> Triple wavelength (755nm, 808nm, 1064nm)</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Integrated skin cooling contact tip</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Safe for all Indian skin tones</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Non-surgical laser rejuvenation</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Aesthetic precision labiaplasty</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Intimate lightening &amp; PRP therapy</li>
                 </ul>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/laser-hair-removal.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=LaserHairRemoval" class="btn-forest btn-sm">
-                    Book
-                  </a>
+                  <a href="treatments/cosmetic-gynecology.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=CosmeticGynecology" class="btn-forest btn-sm">Book</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Treatment 5: Hydrafacials & Medi Facials -->
+          <!-- Treatment 4: Aesthetic Services -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-aesthetic-services.webp" alt="Aesthetic Services" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-forest-green);">Skin Rejuvenation</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Aesthetic Services</h3>
+                <p class="small text-muted mb-3">
+                  Doctor-administered medical chemical peels, microneedling collagen induction, dermaplaning, and skin barrier strengthening for glass-skin texture.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Medical buffered chemical peels</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Collagen induction microneedling</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Medical dermaplaning &amp; barrier care</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/aesthetic-services.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=AestheticServices" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 5: Dermato Surgery -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-dermatosurgery.jpg" alt="Dermato Surgery" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Minor Surgery</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Dermato Surgery</h3>
+                <p class="small text-muted mb-3">
+                  Sterile minor surgical procedures for cosmetic mole removal, sebaceous cyst excision, keloid scar revisions, and sutureless earlobe repair.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Mole &amp; skin tag radiofrequency ablation</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Cyst, lipoma &amp; keloid scar revision</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Earlobe repair (lobuloplasty)</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/dermato-surgery.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=DermatoSurgery" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 6: Hair Transplant Surgery -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-hair-transplant.jpg" alt="Hair Transplant Surgery" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-champagne-gold);">Surgical Trichology</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Hair Transplant Surgery</h3>
+                <p class="small text-muted mb-3">
+                  Advanced Sapphire FUE and Bio-FUE hair restoration by Plastic Surgeon Dr. Surya Keerthana. High graft survival, zero linear scarring, and natural hair density.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Sapphire blade micro-channel incisions</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Bio-FUE autologous graft preservation</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Beard, mustache &amp; eyebrow micro-grafts</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/hair-transplant-surgery.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=HairTransplant" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 7: Hydrafacials & Medi Facials -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
               <div class="p-3">
                 <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
                   <img src="assets/images/treatments/card-hydra-2x.webp" alt="Hydrafacials &amp; Medi Facials" class="w-100 h-100 object-fit-cover">
-                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Hydration &amp; Glow</span>
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-forest-green);">Hydration &amp; Glow</span>
                 </div>
               </div>
               <div class="card-body p-4 pt-1 d-flex flex-column">
@@ -280,47 +354,148 @@
                   <li><i class="bi bi-check2 text-success me-2"></i> Zero downtime event readiness</li>
                 </ul>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/hydrafacials.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=Hydrafacials" class="btn-forest btn-sm">
-                    Book
-                  </a>
+                  <a href="treatments/hydrafacials.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=Hydrafacials" class="btn-forest btn-sm">Book</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Treatment 6: Anti-Ageing Treatments -->
+          <!-- Treatment 8: Laser Hair Removal -->
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
               <div class="p-3">
                 <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
-                  <img src="assets/images/treatments/card-antiage-2x.webp" alt="Anti-Ageing Treatments" class="w-100 h-100 object-fit-cover">
-                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-champagne-gold);">Age Defense</span>
+                  <img src="assets/images/treatments/card-laser-2x.webp" alt="Laser Hair Removal" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Painless Laser</span>
                 </div>
               </div>
               <div class="card-body p-4 pt-1 d-flex flex-column">
-                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Anti-Ageing Treatments</h3>
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Laser Hair Removal</h3>
                 <p class="small text-muted mb-3">
-                  Non-surgical rejuvenation therapies including Botox, dermal fillers, skin booster injections, collagen tightening, and fine line reduction.
+                  USFDA-approved triple wavelength painless laser technology for permanent hair reduction across face, underarms, arms, legs, and full body.
                 </p>
                 <ul class="list-unstyled small mb-4 text-muted">
-                  <li><i class="bi bi-check2 text-success me-2"></i> Wrinkle softening &amp; dynamic line care</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Volume restoration for cheeks &amp; lips</li>
-                  <li><i class="bi bi-check2 text-success me-2"></i> Natural-looking facial harmony</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Triple wavelength (755nm, 808nm, 1064nm)</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Integrated contact cooling ice tip</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Safe for all Indian skin phototypes</li>
                 </ul>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <a href="treatments/anti-ageing.html" class="btn-outline-custom btn-sm">
-                    Explore Details <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="appointment.html?treatment=AntiAgeing" class="btn-forest btn-sm">
-                    Book
-                  </a>
+                  <a href="treatments/laser-hair-removal.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=LaserHairRemoval" class="btn-forest btn-sm">Book</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Treatment 9: Laser Toning & Advanced Solutions -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-laser-toning.jpg" alt="Laser Toning &amp; Advanced Solutions" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-champagne-gold);">Laser Solutions</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Laser Toning &amp; Advanced Solutions</h3>
+                <p class="small text-muted mb-3">
+                  Q-Switched Nd:YAG laser toning for deep dermal pigmentation, melasma clearing, carbon Hollywood facials, acne scar resurfacing, and tattoo removal.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Melasma &amp; sun spot pigment shattering</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Carbon laser peel for deep pore detox</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Fractional acne scar collagen resurfacing</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/laser-toning.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=LaserToning" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 10: AntiAging Treatments & Solutions -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-antiage-2x.webp" alt="AntiAging Treatments &amp; Solutions" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-forest-green);">Age Defense</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">AntiAging Treatments &amp; Solutions</h3>
+                <p class="small text-muted mb-3">
+                  Non-surgical facial harmony treatments including Botox for dynamic wrinkles, USFDA-approved dermal fillers, Profhilo skin boosters, and RF skin tightening.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Micro-dose Botox for natural expression</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Dermal fillers for cheek &amp; lip volume</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Profhilo &amp; bio-remodeling skin boosters</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/anti-ageing.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=AntiAgeing" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 11: Glow & Skin Lightening -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-glow-lightening.webp" alt="Glow &amp; Skin Lightening" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-burgundy);">Skin Radiance</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Glow &amp; Skin Lightening</h3>
+                <p class="small text-muted mb-3">
+                  Doctor-formulated skin brightening protocols: Glutathione infusions, Cosmelan depigmentation peels, bridal glow treatments, and full body tan removal.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Glutathione &amp; Vitamin C antioxidant therapy</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Cosmelan medical depigmentation peel</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> Full-body tan removal &amp; bridal glow</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/glow-and-skin-lightening.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=GlowLightening" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treatment 12: Non-Surgical Hair Re-growth -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border rounded-4 shadow-sm" style="background-color: var(--color-cream-card); border-color: var(--color-gold-border) !important;">
+              <div class="p-3">
+                <div class="rounded-3 overflow-hidden position-relative" style="height: 200px;">
+                  <img src="assets/images/treatments/card-hair-regrowth.webp" alt="Non-Surgical Hair Re-growth" class="w-100 h-100 object-fit-cover">
+                  <span class="badge position-absolute top-0 start-0 m-2" style="background-color: var(--color-champagne-gold);">PRP &amp; GFC</span>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-1 d-flex flex-column">
+                <h3 class="h4 treatment-title font-cormorant" style="color: var(--color-forest-green);">Non-Surgical Hair Re-growth</h3>
+                <p class="small text-muted mb-3">
+                  Advanced autologous Growth Factor Concentrate (GFC), high-density PRP therapy, QR678 Neo peptides, and medical trichology to stop shedding and thicken hair.
+                </p>
+                <ul class="list-unstyled small mb-4 text-muted">
+                  <li><i class="bi bi-check2 text-success me-2"></i> Pure autologous Growth Factor Concentrate (GFC)</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> High-density Platelet-Rich Plasma (PRP)</li>
+                  <li><i class="bi bi-check2 text-success me-2"></i> QR678 Neo bio-peptide mesotherapy</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="treatments/non-surgical-hair-regrowth.html" class="btn-outline-custom btn-sm">Explore Details <i class="bi bi-arrow-right"></i></a>
+                  <a href="appointment.html?treatment=NonSurgicalHairRegrowth" class="btn-forest btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -371,11 +546,17 @@
           <h4 class="footer-heading">Our Treatments</h4>
           <ul class="footer-links-list">
             <li><a href="treatments/clinical-dermatology.html">Clinical Dermatology</a></li>
-            <li><a href="treatments/cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
-            <li><a href="treatments/hair-restoration.html">Hair Restoration</a></li>
+            <li><a href="treatments/trichology.html">Trichology</a></li>
+            <li><a href="treatments/cosmetic-gynecology.html">Cosmetic Gynecology</a></li>
+            <li><a href="treatments/aesthetic-services.html">Aesthetic Services</a></li>
+            <li><a href="treatments/dermato-surgery.html">Dermato Surgery</a></li>
+            <li><a href="treatments/hair-transplant-surgery.html">Hair Transplant Surgery</a></li>
             <li><a href="treatments/laser-hair-removal.html">Laser Hair Removal</a></li>
             <li><a href="treatments/hydrafacials.html">Hydrafacials</a></li>
+            <li><a href="treatments/laser-toning.html">Laser Toning</a></li>
             <li><a href="treatments/anti-ageing.html">Anti-Ageing Care</a></li>
+            <li><a href="treatments/glow-and-skin-lightening.html">Skin Lightening</a></li>
+            <li><a href="treatments/non-surgical-hair-regrowth.html">Hair Re-growth</a></li>
           </ul>
         </div>
 

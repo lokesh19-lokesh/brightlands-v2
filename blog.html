@@ -63,13 +63,30 @@
           <a href="treatments.html" class="nav-link-custom dropdown-toggle" id="treatDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             Treatments <i class="bi bi-chevron-down ms-1" style="font-size: 0.75rem;"></i>
           </a>
-          <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="treatDropdown">
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/clinical-dermatology.html"><i class="bi bi-arrow-right-short"></i> Clinical Dermatology</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/cosmetic-dermatology.html"><i class="bi bi-arrow-right-short"></i> Cosmetic Dermatology</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/hair-restoration.html"><i class="bi bi-arrow-right-short"></i> Trichology &amp; Hair Care</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/laser-hair-removal.html"><i class="bi bi-arrow-right-short"></i> Laser Hair Removal</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/hydrafacials.html"><i class="bi bi-arrow-right-short"></i> Hydrafacials &amp; Medi Facials</a></li>
-            <li><a class="dropdown-item dropdown-item-custom" href="treatments/anti-ageing.html"><i class="bi bi-arrow-right-short"></i> Anti-Ageing Treatments</a></li>
+          <ul class="dropdown-menu dropdown-menu-custom dropdown-menu-mega" aria-labelledby="treatDropdown">
+            <div class="dropdown-mega-grid">
+              <div class="dropdown-mega-col">
+                <a class="dropdown-item dropdown-item-custom" href="treatments/clinical-dermatology.html"><i class="bi bi-chevron-right"></i> Clinical Dermatology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/trichology.html"><i class="bi bi-chevron-right"></i> Trichology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/cosmetic-gynecology.html"><i class="bi bi-chevron-right"></i> Cosmetic Gynecology</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/aesthetic-services.html"><i class="bi bi-chevron-right"></i> Aesthetic Services</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/dermato-surgery.html"><i class="bi bi-chevron-right"></i> Dermato Surgery</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/hair-transplant-surgery.html"><i class="bi bi-chevron-right"></i> Hair Transplant Surgery</a>
+              </div>
+              <div class="dropdown-mega-col">
+                <a class="dropdown-item dropdown-item-custom" href="treatments/hydrafacials.html"><i class="bi bi-chevron-right"></i> Hydrafacials &amp; Medi Facials</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/laser-hair-removal.html"><i class="bi bi-chevron-right"></i> Laser Hair Removal</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/laser-toning.html"><i class="bi bi-chevron-right"></i> Laser Toning &amp; Advanced Solutions</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/anti-ageing.html"><i class="bi bi-chevron-right"></i> AntiAging Treatments &amp; Solutions</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/glow-and-skin-lightening.html"><i class="bi bi-chevron-right"></i> Glow &amp; Skin Lightening</a>
+                <a class="dropdown-item dropdown-item-custom" href="treatments/non-surgical-hair-regrowth.html"><i class="bi bi-chevron-right"></i> Non-Surgical Hair Re-growth</a>
+              </div>
+            </div>
+            <div class="dropdown-mega-footer">
+              <a class="dropdown-item-custom fw-bold justify-content-center" href="treatments.html" style="color: var(--color-burgundy);">
+                <i class="bi bi-grid-fill me-1"></i> View All 12 Treatments &amp; Procedures <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
           </ul>
         </div>
         <a href="doctors.html" class="nav-link-custom">Doctors</a>
@@ -98,7 +115,26 @@
     <ul class="mobile-nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="treatments.html">Treatments</a></li>
+      <li>
+        <a href="treatments.html" class="mobile-nav-dropdown-toggle" data-target="mobileTreatmentsMenu">
+          <span>Treatments</span>
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <ul class="mobile-submenu" id="mobileTreatmentsMenu">
+          <li><a href="treatments/clinical-dermatology.html">Clinical Dermatology</a></li>
+          <li><a href="treatments/trichology.html">Trichology</a></li>
+          <li><a href="treatments/cosmetic-gynecology.html">Cosmetic Gynecology</a></li>
+          <li><a href="treatments/aesthetic-services.html">Aesthetic Services</a></li>
+          <li><a href="treatments/dermato-surgery.html">Dermato Surgery</a></li>
+          <li><a href="treatments/hair-transplant-surgery.html">Hair Transplant Surgery</a></li>
+          <li><a href="treatments/hydrafacials.html">Hydrafacials &amp; Medi Facials</a></li>
+          <li><a href="treatments/laser-hair-removal.html">Laser Hair Removal</a></li>
+          <li><a href="treatments/laser-toning.html">Laser Toning &amp; Advanced Solutions</a></li>
+          <li><a href="treatments/anti-ageing.html">AntiAging Treatments &amp; Solutions</a></li>
+          <li><a href="treatments/glow-and-skin-lightening.html">Glow &amp; Skin Lightening</a></li>
+          <li><a href="treatments/non-surgical-hair-regrowth.html">Non-Surgical Hair Re-growth</a></li>
+        </ul>
+      </li>
       <li><a href="doctors.html">Doctors</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="blog.html" class="active">Blog</a></li>
@@ -266,11 +302,17 @@
           <h4 class="footer-heading">Our Treatments</h4>
           <ul class="footer-links-list">
             <li><a href="treatments/clinical-dermatology.html">Clinical Dermatology</a></li>
-            <li><a href="treatments/cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
-            <li><a href="treatments/hair-restoration.html">Hair Restoration</a></li>
+            <li><a href="treatments/trichology.html">Trichology</a></li>
+            <li><a href="treatments/cosmetic-gynecology.html">Cosmetic Gynecology</a></li>
+            <li><a href="treatments/aesthetic-services.html">Aesthetic Services</a></li>
+            <li><a href="treatments/dermato-surgery.html">Dermato Surgery</a></li>
+            <li><a href="treatments/hair-transplant-surgery.html">Hair Transplant Surgery</a></li>
             <li><a href="treatments/laser-hair-removal.html">Laser Hair Removal</a></li>
             <li><a href="treatments/hydrafacials.html">Hydrafacials</a></li>
+            <li><a href="treatments/laser-toning.html">Laser Toning</a></li>
             <li><a href="treatments/anti-ageing.html">Anti-Ageing Care</a></li>
+            <li><a href="treatments/glow-and-skin-lightening.html">Skin Lightening</a></li>
+            <li><a href="treatments/non-surgical-hair-regrowth.html">Hair Re-growth</a></li>
           </ul>
         </div>
 
