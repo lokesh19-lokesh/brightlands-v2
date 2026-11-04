@@ -59,8 +59,11 @@
         <span class="top-bar-divider">|</span>
         <span class="top-bar-item"><i class="bi bi-geo-alt-fill text-gold"></i> Toli Chowki, Hyderabad</span>
       </div>
-      <div class="d-flex align-items-center gap-3">
-        <a href="tel:+917878785823" class="top-bar-item"><i class="bi bi-telephone-fill text-gold"></i> 7878785823</a>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-telephone-fill text-gold"></i>
+        <a href="tel:+917878785823" class="top-bar-item">7878785823</a>
+        <span class="top-bar-phone-divider">/</span>
+        <a href="tel:+918121212146" class="top-bar-item">8121212146</a>
       </div>
     </div>
   </div>
@@ -126,12 +129,15 @@
         <a href="../contact.html" class="nav-link-custom">Contact</a>
       </nav>
       <div class="d-none d-lg-flex align-items-center gap-3">
-        <a href="tel:+917878785823" class="nav-phone-link">
+        <div class="nav-phone-group">
           <i class="bi bi-telephone text-gold"></i>
-          <span>7878785823</span>
+          <a href="tel:+917878785823" class="nav-phone-link" title="Call Gachibowli: 7878785823">7878785823</a>
+          <span class="nav-phone-divider">/</span>
+          <a href="tel:+918121212146" class="nav-phone-link" title="Call Toli Chowki: 8121212146">8121212146</a>
+        </div>
+        <a href="../appointment.html" class="btn-forest nav-cta-btn">
+          Book an Appointment <i class="bi bi-arrow-right"></i>
         </a>
-        <a href="../appointment.html" class="btn-forest nav-cta-btn">Book an Appointment <i
-            class="bi bi-arrow-right"></i></a>
       </div>
       <button type="button" class="mobile-nav-toggle" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
     </div>
@@ -175,7 +181,17 @@
       <li><a href="../contact.html">Contact Us</a></li>
     </ul>
     <div class="mt-auto pt-3 border-top border-light">
-      <a href="../appointment.html" class="btn-burgundy w-100 text-center">Book an Appointment</a>
+      <div class="d-flex flex-column gap-2 mb-3">
+        <a href="tel:+917878785823" class="d-flex align-items-center gap-2 text-dark fw-bold text-decoration-none">
+          <i class="bi bi-telephone-fill text-gold"></i> +91 7878785823
+        </a>
+        <a href="tel:+918121212146" class="d-flex align-items-center gap-2 text-dark fw-bold text-decoration-none">
+          <i class="bi bi-telephone-fill text-gold"></i> +91 8121212146
+        </a>
+      </div>
+      <a href="../appointment.html" class="btn-burgundy w-100 text-center mb-2">
+        Book an Appointment
+      </a>
     </div>
   </aside>
 

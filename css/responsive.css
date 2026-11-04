@@ -144,6 +144,28 @@
 
 /* Desktop (992px to 1199px) */
 @media (max-width: 1199px) {
+  .nav-desktop-menu {
+    gap: 0.25rem !important;
+  }
+
+  .nav-link-custom {
+    padding: 0.45rem 0.55rem !important;
+    font-size: 0.86rem !important;
+  }
+
+  .nav-phone-group {
+    font-size: 0.82rem !important;
+  }
+
+  .nav-phone-link {
+    font-size: 0.82rem !important;
+  }
+
+  .nav-cta-btn {
+    padding: 0.55rem 0.95rem !important;
+    font-size: 0.84rem !important;
+  }
+
   .hero-editorial .hero-heading {
     font-size: 3.4rem;
   }
