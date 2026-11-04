@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BRIGHTLANDS DERMA – RESPONSIVE STYLESHEET
+   Bright Lands Skin, Hair & Laser Clinic – RESPONSIVE STYLESHEET
    Mobile-First & Breakpoint Refinements
    ========================================================================== */
 
@@ -147,16 +147,16 @@
   .hero-editorial .hero-heading {
     font-size: 3.4rem;
   }
-  
+
   .about-preview-grid {
     grid-template-columns: 1fr 1.6fr 1fr;
     gap: 1.5rem;
   }
-  
+
   .about-thumb-card img {
     height: 220px;
   }
-  
+
   .treatments-grid-mockup {
     gap: 1.1rem;
   }
@@ -167,76 +167,76 @@
   .top-bar-divider {
     display: none;
   }
-  
+
   .top-bar .container {
     flex-direction: column;
     gap: 0.35rem;
     text-align: center;
   }
-  
+
   .nav-desktop-menu,
   .nav-phone-link,
   .nav-cta-btn {
     display: none !important;
   }
-  
+
   .mobile-nav-toggle {
     display: flex;
   }
-  
+
   .hero-editorial {
     padding: 2.5rem 0 3.5rem;
   }
-  
+
   .hero-editorial .hero-heading {
     font-size: 2.8rem;
   }
-  
+
   .hero-image-card img {
     height: 320px;
   }
-  
+
   .about-preview-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .about-thumb-card {
     max-width: 480px;
     margin: 0 auto;
   }
-  
+
   .about-thumb-card img {
     height: 240px;
   }
-  
+
   .treatments-grid-mockup {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .doctors-layout-mockup {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1.8rem;
   }
-  
+
   .about-hero-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  
+
   .about-reception-arched {
     border-radius: 60px 20px 20px 20px;
   }
-  
+
   .about-reception-arched img {
     height: 300px;
   }
-  
+
   .value-cards-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .appointment-card-container {
     padding: 2.2rem 1.8rem;
   }
@@ -248,37 +248,37 @@
     font-size: 0.74rem;
     padding: 0.4rem 0;
   }
-  
+
   .navbar-brand-custom img {
     height: 38px;
   }
-  
+
   .hero-editorial {
     padding: 1.8rem 0 2.8rem;
   }
-  
+
   .hero-editorial .eyebrow {
     font-size: 0.7rem;
     letter-spacing: 0.16em;
   }
-  
+
   .hero-editorial .hero-heading {
     font-size: 2.15rem;
   }
-  
+
   .hero-editorial .hero-desc {
     font-size: 0.95rem;
     margin-bottom: 2rem;
   }
-  
+
   .hero-image-card {
     border-radius: var(--radius-lg);
   }
-  
+
   .hero-image-card img {
     height: 240px;
   }
-  
+
   .hero-cta-pill {
     font-size: 0.82rem;
     padding: 0.65rem 1.4rem;
@@ -286,53 +286,53 @@
     width: auto;
     white-space: nowrap;
   }
-  
+
   .about-center-content h2 {
     font-size: 1.65rem;
   }
-  
+
   .rating-badge-pill {
     flex-direction: column;
     gap: 0.6rem;
     padding: 0.85rem 1.4rem;
     border-radius: var(--radius-md);
   }
-  
+
   .divider-vertical {
     width: 60px;
     height: 1px;
   }
-  
+
   .treatments-grid-mockup {
     grid-template-columns: 1fr;
     gap: 0.9rem;
   }
-  
+
   .treatment-card-mockup {
     padding: 0.75rem;
   }
-  
+
   .treatment-card-mockup .thumb-wrap {
     width: 80px;
     height: 60px;
   }
-  
+
   .treatment-card-mockup h3 {
     font-size: 0.96rem;
   }
-  
+
   .doctors-group-image-card img {
     height: 190px;
   }
-  
+
   .doctors-content-mockup h2 {
     font-size: 1.65rem;
   }
-  
+
   .site-footer {
     padding: 3.5rem 0 1.5rem;
   }
-  
+
   .floating-whatsapp {
     width: 48px;
     height: 48px;
@@ -340,7 +340,15 @@
     bottom: 20px;
     right: 20px;
   }
-  
+
+  .back-to-top-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
+    bottom: 78px;
+    right: 23px;
+  }
+
   .appointment-card-container {
     padding: 1.6rem 1.2rem;
     border-radius: var(--radius-lg);

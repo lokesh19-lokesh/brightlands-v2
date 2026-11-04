@@ -1,5 +1,5 @@
 /**
- * Brightlands Derma – Main Application JavaScript
+ * Bright Lands Skin, Hair & Laser Clinic – Main Application JavaScript
  * Handles navigation, sticky header, mobile drawer, accordions, and interactions
  */
 
@@ -173,16 +173,39 @@ function initGalleryFilter() {
  * Back to top helper
  */
 function initBackToTop() {
-  const btn = document.querySelector('.back-to-top-btn');
-  if (!btn) return;
+  let btn = document.querySelector('.back-to-top-btn');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
+  // Auto-inject if not already present in the HTML DOM
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'back-to-top-btn';
+    btn.setAttribute('aria-label', 'Scroll to top of page');
+    btn.setAttribute('title', 'Scroll to top');
+    btn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    document.body.appendChild(btn);
+  }
+
+  // Throttled scroll listener with requestAnimationFrame
+  let ticking = false;
+  const updateVisibility = () => {
+    if (window.scrollY > 280) {
       btn.classList.add('show');
     } else {
       btn.classList.remove('show');
     }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateVisibility);
+      ticking = true;
+    }
   }, { passive: true });
+
+  // Initial check in case user loaded or reloaded midway through page
+  updateVisibility();
 
   btn.addEventListener('click', (e) => {
     e.preventDefault();

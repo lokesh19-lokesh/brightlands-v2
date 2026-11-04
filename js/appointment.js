@@ -1,5 +1,5 @@
 /**
- * Brightlands Derma – Appointment Booking & Form Validation
+ * Bright Lands Skin, Hair & Laser Clinic – Appointment Booking & Form Validation
  * Indian mobile validation, date bounds, consultation selection
  */
 
@@ -219,7 +219,7 @@ function initContactForm() {
     setTimeout(() => {
       btn.disabled = false;
       btn.innerText = 'Message Sent Successfully!';
-      alert('Thank you for contacting Brightlands Derma. Our patient coordinator will contact you shortly.');
+      alert('Thank you for contacting Bright Lands Skin, Hair & Laser Clinic. Our patient coordinator will contact you shortly.');
       contactForm.reset();
       setTimeout(() => { btn.innerText = 'Send Message'; }, 3000);
     }, 600);
@@ -284,7 +284,7 @@ function showSuccessModal(record) {
               </p>
             </div>
             <div class="modal-footer border-0 pt-0 d-flex justify-content-between">
-              <a href="https://wa.me/+917878785823?text=${encodeURIComponent('Hello Brightlands Derma, I requested an appointment (Ref: ' + record.id + ') for ' + record.treatment + ' on ' + record.date + '.')}" 
+              <a href="https://wa.me/+917878785823?text=${encodeURIComponent('Hello Bright Lands Skin, Hair & Laser Clinic, I requested an appointment (Ref: ' + record.id + ') for ' + record.treatment + ' on ' + record.date + '.')}" 
                  target="_blank" class="btn btn-outline-custom btn-sm" style="border-color: #25D366; color: #25D366 !important;">
                 <i class="bi bi-whatsapp me-1"></i> WhatsApp Us
               </a>

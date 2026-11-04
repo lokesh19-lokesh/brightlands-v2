@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BRIGHTLANDS DERMA – SKIN, HAIR & LASER
+   Bright Lands Skin, Hair & Laser Clinic – SKIN, HAIR & LASER
    Official Design System & Stylesheet
    Approved Luxury Editorial Theme
    ========================================================================== */
@@ -29,7 +29,7 @@
   --color-cream-subtle: #FDFBF7;
   --color-cream-card: #FAF5EE;
   --color-white: #FFFFFF;
-  
+
   /* Text & Surfaces */
   --color-text-main: #182522;
   --color-text-heading: #063F32;
@@ -37,12 +37,12 @@
   --color-text-light: #8B9993;
   --color-border-subtle: rgba(6, 63, 50, 0.08);
   --color-border-card: rgba(181, 138, 67, 0.22);
-  
+
   /* Typography - Approved Font Hierarchy */
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans: 'Poppins', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-cormorant: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  
+
   /* Radii */
   --radius-xs: 6px;
   --radius-sm: 10px;
@@ -50,14 +50,14 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-pill: 9999px;
-  
+
   /* Shadows */
   --shadow-subtle: 0 4px 20px rgba(6, 63, 50, 0.04);
   --shadow-card: 0 10px 30px rgba(6, 63, 50, 0.07);
   --shadow-card-hover: 0 16px 40px rgba(6, 63, 50, 0.12);
   --shadow-button: 0 6px 18px rgba(6, 63, 50, 0.2);
   --shadow-dropdown: 0 16px 45px rgba(6, 63, 50, 0.14);
-  
+
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -66,7 +66,9 @@
 /* --------------------------------------------------------------------------
    2. Reset & Global Base
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -101,7 +103,10 @@ a {
   transition: color var(--transition-fast);
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
 }
 
@@ -509,9 +514,10 @@ figcaption {
 
 /* Desktop smooth hover support */
 @media (min-width: 992px) {
-  .nav-desktop .dropdown:hover > .dropdown-menu-custom,
-  nav.d-none.d-lg-flex .dropdown:hover > .dropdown-menu-custom,
-  .dropdown:hover > .dropdown-menu-custom {
+
+  .nav-desktop .dropdown:hover>.dropdown-menu-custom,
+  nav.d-none.d-lg-flex .dropdown:hover>.dropdown-menu-custom,
+  .dropdown:hover>.dropdown-menu-custom {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
@@ -556,6 +562,24 @@ figcaption {
     border-top: 1px solid var(--color-gold-border);
     margin-top: 0.6rem;
     padding-top: 0.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-menu-custom.dropdown-menu-mega {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .dropdown-mega-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .dropdown-mega-col {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1197,10 +1221,10 @@ figcaption {
   font-weight: 500;
 }
 
-.was-validated .form-control-custom:invalid ~ .invalid-feedback-custom,
-.was-validated .form-select-custom:invalid ~ .invalid-feedback-custom,
-.form-control-custom.is-invalid ~ .invalid-feedback-custom,
-.form-select-custom.is-invalid ~ .invalid-feedback-custom {
+.was-validated .form-control-custom:invalid~.invalid-feedback-custom,
+.was-validated .form-select-custom:invalid~.invalid-feedback-custom,
+.form-control-custom.is-invalid~.invalid-feedback-custom,
+.form-select-custom.is-invalid~.invalid-feedback-custom {
   display: block;
 }
 
@@ -1750,6 +1774,70 @@ figcaption {
 .floating-whatsapp:hover {
   transform: scale(1.08) translateY(-2px);
   box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+}
+
+/* --------------------------------------------------------------------------
+   20b. Scroll To Top Button (Luxury Floating Action)
+   -------------------------------------------------------------------------- */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 96px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-forest-green);
+  color: var(--color-champagne-gold);
+  border: 1.5px solid var(--color-champagne-gold);
+  box-shadow: 0 8px 24px rgba(6, 63, 50, 0.22), 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1039;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.92);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.back-to-top-btn i {
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.back-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top-btn:hover {
+  background-color: var(--color-burgundy);
+  color: var(--color-white);
+  border-color: var(--color-burgundy);
+  box-shadow: 0 12px 28px rgba(128, 13, 37, 0.35);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.back-to-top-btn:hover i {
+  transform: translateY(-2px);
+}
+
+.back-to-top-btn:focus-visible {
+  outline: 2px solid var(--color-champagne-gold);
+  outline-offset: 3px;
+}
+
+.back-to-top-btn:active {
+  transform: translateY(0) scale(0.96);
 }
 
 /* --------------------------------------------------------------------------
